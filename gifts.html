@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>forms</title>
+  </head>
+  <style>
+    body{
+    background-image:url("formbg.gif");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    }
+  </style>
+  <body>
+    <h1 font-family:Verdana align=center>FILL THE FORM TO WIN EXCITING GIFTS OR OFFERS!!</h1>
+<h2 font-family:fantasy align=center>THE WINNER WILL BE SHORTLISTED BASED ON THE GROUPS METHOD,!</h2>
+<form action="submit.html" onsubmit="return validateForm()" method="GET" name="myForm">
+         <p>
+            <label style="color:black; font-size:35px; font-family:fantasy">
+          <br>
+            Name: <input type="text" name="name" id="name"><br><br>
+            Gender: <input type="radio" value="Male" name="gender" id="gender">Male
+						<input type="radio" value="Female" name="gender" id="gender">Female<br><br>
+            DOB: <input type="date" name="dob" id="dob"><br><br>
+            E-mail: <input type="email" name="email" id="email">
+            <br><br>Contact: <input type="text" name="cont" id="cont"><br><br>
+                <br><br>
+                <input type="submit" value="Submit" style="border-radius: 15px; width:100px; height:50px;">
+               </label>
+               </form>
+                    <br><br>
+			<a href="botique.html" style="font-family:segoe;
+	color:purple;
+	text-decoration:none;
+	font-size:45px;
+">Back to Home</a>
+<script type="application/javascript">
+  function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    if (x == "") {
+      alert("Enter your name!");
+      return false;
+    }
+    else if(x.length < 3){
+      alert("Length of name should be>=3!");
+      return false;
+       }
+    
+    var gender = document.forms["myForm"]["gender"].value;
+    if(gender==""){
+      alert("Select Gender!");
+      return false;
+    }
+    
+    var dob = document.forms["myForm"]["dob"].value;
+    if(dob==""){
+      alert("Select DOB!");
+      return false;
+    }
+    
+    var mail = document.forms["myForm"]["email"].value;
+    if(mail==""){
+      alert("Enter E-mail!");
+      return false;
+    }
+    
+    var cont = document.forms["myForm"]["cont"].value;
+    if(cont==""){
+      alert("Enter Contact!");
+      return false;
+    }
+    else if(cont.length!=8 && cont.length!=10){
+      alert("Invalid Contact Number! Length should be 8 or 10!");
+      return false;
+    }
+  }
+  </script>
+    </body>
+    </html>

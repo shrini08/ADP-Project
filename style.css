@@ -1,0 +1,46 @@
+body{
+  background-image:url('bg.gif');
+  background-colour:red;
+  background-blendmode:multiply;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}.first
+{
+	font-family:lucida;
+	color: #000000;
+	text-align:center;
+}
+.one
+{
+	text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background-color:transparent;
+  	color:purple;
+  font-family:fantasy;
+}
+
+.botiquelogo
+{
+	float="left";
+	align="left";
+	width: 150px;
+	height: 150px;
+}.navbar {
+  overflow: hidden;
+  height: 50px;
+  background-color: red;
+}
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: left;
+  padding: 10px 15px;
+  text-decoration: none;
+}
